@@ -1,0 +1,106 @@
+/*****
+SECTION DELIVERY
+****/
+
+.achievements {
+  display: flex;
+}
+
+@media screen and (max-width:430px) {
+  .achievements {
+    /*    display: flex;*/
+    flex-wrap: wrap;
+  }
+}
+
+
+.achievements-num {
+  color: #8400ff;
+  font-size: 2rem;
+}
+
+.callus-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.btn-pickup {
+  height: 3.125rem;
+  margin-left: 1rem;
+}
+
+.cost_delivery_header {
+  border-bottom: 1px solid #e8e8e8;
+  transition: all .2s ease-in-out;
+  outline: 0;
+  cursor: pointer;
+}
+
+.cost_delivery {
+  padding: 0;
+}
+
+.cost_delivery_button {
+  background: none;
+  border: 1px solid #8400ff;
+  border-radius: 3px;
+  text-align: left;
+  width: 100%;
+  padding: .7rem .5rem;
+  cursor: pointer;
+  font-size: 100%;
+}
+
+.table-menu {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.table-menu__header {
+  color: #999;
+}
+
+.table-menu__field {
+  padding: .5rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e8e8e8;
+  text-align: left;
+}
+
+.tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+td,
+th {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}

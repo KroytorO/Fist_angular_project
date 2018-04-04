@@ -1,0 +1,260 @@
+
+/*****Базовые элементы*****/
+
+/*Определение стилей для тегов: body, h1-h6, ul, ol, a, p и т.п.*/
+
+
+
+/*****Хедер*****/
+
+/*Определите значения элементов хедера*/
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: .25rem 1rem;
+  font-weight: 600;
+  background-color: #6900cc;
+}
+
+.header__section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__item {
+  padding: 0 15px;
+
+}
+
+
+.link_menu:hover {
+  display: block;
+  height: 100%;
+  color: #8400ff;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+
+.headerlogo {
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-left: 16px;
+}
+
+.headerButton {
+  cursor: pointer;
+
+}
+
+
+/**Section HEADER nav style*/
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  background: #8400ff;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 20%;
+  padding: 5px 16px;
+}
+
+.main-nav__burger {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+
+.the-burger {
+  background: transparent;
+  padding: .2rem 1rem;
+  outline: none;
+  color: #fff;
+  fill: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+
+}
+
+
+.the-burger:hover {
+  background: #fff;
+  color: #8400ff
+}
+
+/***form search***/
+
+.main-nav__search {
+  background: transparent;
+  flex: 0.5 1 auto;
+}
+
+form {
+  display: block;
+}
+
+.search {
+  position: relative;
+  max-width: 1000px;
+}
+
+.search-wrap {
+  border: none;
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.search__input {
+  width: 100%;
+  padding: .5rem 2rem .5rem 1rem;
+  border: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  background: transparent;
+  color: #454545;
+  font-size: .875rem;
+  line-height: 1.1875rem;
+  outline: 0;
+}
+
+.search__btn {
+  position: absolute;
+  margin-left: -1.5rem;
+  width: 2.25rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.search__btn:before {
+  content: "";
+  /*font-family: FontAwesome;*/
+  font-size: 16px;
+  color: #000;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__tel {
+  font-size: 1.375rem;
+  line-height: 1.9375rem;
+}
+
+.contacts__working-hours {
+  font-size: .75rem;
+  line-height: .75rem;
+
+}
+
+
+
+/*****Футер*****/
+
+/*Определите значения элементов футера*/
+
+/*
+.footer a {
+    color: #ccc;
+}
+*/
+
+.footer__row .link {
+  color: #ccc;
+}
+
+.footer__row .link:hover {
+  color: #6900cc;
+}
+
+.footer__row {
+  padding: 64px 30px 30px 30px;
+  letter-spacing: .1px;
+  background-color: #2e2e2e;
+  line-height: 1.5rem;
+  font-size: .875rem;
+}
+
+.footer__title {
+  text-align: center;
+  line-height: 2.125rem;
+  font-size: 1.75rem;
+  color: #d4d4d4;
+  font-weight: 600;
+  max-width: 565px;
+  margin: 0 auto;
+
+}
+
+.footer__subcontent {
+  text-align: center;
+  max-width: 484px;
+  margin: 16px auto 0;
+  color: #ccc;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer__item--with-margin {
+  margin: 16px 20px 0 20px;
+}
+
+.footer__row.footer-style {
+  background-color: #292929;
+}
+
+.wrap_footer_info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.footer__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__info-column {
+  margin: 5px 15px;
+}
+
+
+.footer__social {
+  display: flex;
+}
+
+.footer__social-item {
+  padding: 0 15px;
+}
+
+.footer__copyright {
+  color: #999;
+  font-size: 0.8rem;
+  margin-top: 32px;
+}

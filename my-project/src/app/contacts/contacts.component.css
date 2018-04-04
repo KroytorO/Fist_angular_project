@@ -1,0 +1,26 @@
+.call {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 16px;
+  background-color: rgba(155, 82, 224, .09);
+}
+
+.field {
+  position: relative;
+  border: none;
+  padding: 0;
+}
+
+.call-btn {
+  margin-top: 1rem;
+}
+
+.button.call-btn:hover {
+  opacity: .4;
+}
+
+
+.change-text.call-text {
+  margin-top: 1rem;
+  text-align: center;
+}

@@ -1,0 +1,168 @@
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <!--<link rel="stylesheet" type="text/css" href="/font-awesome-4.7.0/css/font-awesome.css">-->
+  </head>
+  <body>
+  <header class="header">
+
+    <!--    <div class="header-menu">-->
+    <div class="header__section">
+      <div class="header__item headerlogo">
+        <a routerLink="/" class="link link_menu">WBD </a>
+      </div>
+
+
+      <div class="header__item headerButton">
+        <a class="link link_menu" routerLink="/delivery">Доставка</a>
+      </div>
+      <div class="header__item headerButton">
+        <a class="link link_menu" routerLink="/payment">Оплата</a>
+      </div>
+      <div class="header__item headerButton">
+        <a class="link link_menu" routerLink="/return">Возврат и обмен</a>
+      </div>
+      <div class="header__item headerButton">
+        <a class="link link_menu" routerLink="/contacts">Контакты</a>
+      </div>
+    </div>
+
+    <div class="header__section">
+      <div class="header__item headerButton">
+        <a class="link link_menu" routerLink="/login-form">Войти</a>
+      </div>
+      <div class="header__item headerButton">
+        <a class="link link_menu" routerLink="/registration-form">Регистрация</a>
+      </div>
+    </div>
+    <!--    </div>-->
+  </header>
+
+  <nav class="main-nav">
+
+
+    <div class="main-nav__burger"><button class="the-burger"><!----><span >Каталог</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </button>
+    </div>
+
+    <div class="main-nav__search">
+      <form [formGroup]="" class="search">
+        <div class="search-wrap">
+          <input type="search" placeholder="Поиск по артикулу, названию, категории" class="search__input" />
+          <button type="submit" class="search__btn">
+            <i class="fa fa-search fa-2x" aria-hidden="true" style="color: #8400ff;"></i>
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+
+    <!--Вопрос если убрать div?то верстка слетает, как сделать так, чтобы не использовать div лишний-->
+    <div class="contacts">
+      <div class="contacts__tel">
+        <a class="link" href="tel:+74934446">+7 (831) 333 46 76</a>
+      </div>
+      <div class="contacts__working-hours">c 09:00 до 21:00, без выходных
+      </div>
+    </div>
+
+
+    <div>
+      <ul>
+        <li>
+          <a class="link" href="#">
+            <div>
+              <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+
+              <!---->
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+  </nav>
+
+  <!--------------MAIN----------------->
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!--              FOOTER                  -->
+  <footer class="footer">
+    <section class="footer__row ">
+      <h6 class="footer__title">Ответим на все вопросы, поможем заказать, выручим в трудный момент 🙌</h6>
+      <p class="footer__subcontent">
+        Нам можно позвонить по телефону, написать в мессенджеры, отправить письмо, или прислать фотографию сметы — оперативно ответим с 09:00 до 20:00, без выходных
+      </p>
+      <ul class="footer__contacts">
+        <li class="footer__item--with-margin">
+          <a class="link" href="tel:+73434352435">+7 (831) 191 01 84</a>
+        </li>
+        <li class="footer__item--with-margin">
+          <a class="link" href="mailto:zakaz+052@gmail.ru">zakaz+052@gmail.ru</a>
+        </li>
+        <li class="footer__item--with-margin">
+          <a class="link" href="https://api.whatsapp.com/send?phone=792648435756" target="_blank">+7 345 480 55 56</a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer__row footer-style">
+      <div class="wrap_footer_info">
+        <div class="footer__info">
+          <div class="footer__info-column">
+            <ul>
+              <li><a href="#" class="link ">Доставка</a></li>
+              <li><a href="#" class="link">Срочная доставка</a></li>
+              <li><a href="#" class="link">Стоимость доставки</a></li>
+              <li><a href="#" class="link">Разгрузка и подъем</a></li>
+              <li><a href="#" class="link">Самовывоз</a></li>
+              <li><a href="#" class="link">Правила получения</a></li>
+            </ul>
+          </div>
+          <div class="footer__info-column">
+            <ul>
+              <li><a href="#" class="link">Оплата</a></li>
+              <li><a href="#" class="link">Для физических лиц</a></li>
+              <li><a href="#" class="link">Для юридических лиц</a></li>
+              <li><a href="#" class="link">Реквизиты</a></li>
+            </ul>
+            <ul>
+              <li><a href="#" class="link">Возврат и обмен</a></li>
+            </ul>
+          </div>
+          <div class="footer__info-column">
+            <ul>
+              <li><a href="" class="link">Контакты</a></li>
+              <li><a href="#" class="link">Способы связи</a></li>
+              <li><a href="#" class="link">Центральный офис</a></li>
+              <li><a href="#" class="link">Пункты самовывоза</a></li>
+            </ul>
+            <ul>
+              <li><a href="#" class="link">Публичная офрета</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="footer__social">
+          <li class="footer__social-item"><a href="" class="link">
+            <i class="fa fa-vk fa-2x" aria-hidden="true"></i>
+          </a></li>
+          <li class="footer__social-item"><a href="" class="link">
+            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+          </a></li>
+        </ul>
+      </div>
+
+      <p class="footer__copyright">© 2017–2018 ООО «СтройМатериал»</p>
+    </section>
+  </footer>
+  <!--       END FOOTER        -->
+
+</body>
+  </html>
